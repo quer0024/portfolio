@@ -33,7 +33,7 @@
 .h2 {
   font-family: "tangier", sans-serif;
   font-weight: 500;
-  font-style: normal;
+  font-style: n11ormal;
 }
 
 .h3 {
@@ -69,4 +69,19 @@
 
 .fa-brands {
   color: var(--bs-primary);
+}
+
+/* Styling About */
+
+.about-me {
+  font-size: 1.5rem;
+}
+
+.card-text {
+  font-size: 1.2rem;
+  line-height: 1.2em;
+}
+
+.card-title {
+  font-size: 1.8rem;
 }
