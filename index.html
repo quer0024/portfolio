@@ -9,6 +9,8 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- CSS Stylesheet link -->
     <link rel="stylesheet" href="css/main.css">
+    <!-- Adobe Font Link -->
+    <link rel="stylesheet" href="https://use.typekit.net/zvb3gah.css">
     <!-- Font Awesome Icons link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
@@ -20,21 +22,30 @@
         <!-- Maya's World Logo -->
         <a href="index.html"><img src="images/" alt=""></a>
         <!-- Navigation for HOME, WORK, ABOUT, and CONTACT pages, does not go to specific project pages -->
-        <nav>
-            <ul class="nav justify-content-end">
-                <li class="nav-item h3">
-                    <a class="nav-link active --bs-primary" aria-current="page" href="index.html">HOME</a>
-                </li>
-                <li class="nav-item h3">
-                    <a class="nav-link text-white" href="work.html">WORK</a>
-                </li>
-                <li class="nav-item h3">
-                    <a class="nav-link text-white" href="about.html">ABOUT</a>
-                </li>
-                <li class="nav-item h3">
-                    <a class="nav-link text-white" href="contact.html">CONTACT</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <!-- LOGO here -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ms-3" href="work.html">WORK</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ms-3" href="about.html">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ms-3" href="contact.html">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main class="mt-4 pb-2">
@@ -48,8 +59,8 @@
         <h1 class="text-white fst-italic">Feature Project</h1>
         <a href="pop.html"><img class="img-fluid" src="images/feature-desktop.jpg"
                 alt="Pop Therapy brand design work"></a>
-        <h2><a class="text-white text-decoration-none" href="work.html">View all my work<i
-                    class="fa-solid fa-arrow-right-long text-white"></i></a>
+        <h2 class="m-2"><a class="text-white text-decoration-none h2" href="work.html">View all my work<i
+                    class="fa-solid fa-arrow-right-long text-white ms-3"></i></a>
         </h2>
         <!-- Add icon arrow point to right that is a button -->
 
@@ -57,19 +68,22 @@
 
         <!-- add border bottom to main  -->
     </main>
-    <footer class="my-5 border-top">
+    <footer class="my-4 border-top">
         <div class="row mt-5">
             <div class="col-6">
-                <a href="https://www.instagram.com/mayasworld.ca">
-                    <i class="fa-brands fa-square-instagram  display-5 me-2"></i>
+                <a class="text-decoration-none socials" href="https://www.instagram.com/mayasworld.ca">
+                    <i class="fa-brands fa-square-instagram  display-5 me-2 "></i>
                 </a>
-                <a href="https://www.linkedin.com/in/maya-querido-194001239/">
-                    <i class="fa-brands fa-linkedin display-5 me-2"></i>
+                <a class="text-decoration-none  socials" href="https://www.linkedin.com/in/maya-querido-194001239/">
+                    <i class="fa-brands fa-linkedin display-5 me-2 "></i>
                 </a>
-                <p class="text-white">&copy Maya's World 2024</p>
+                <p class="text-white copy">&copy Maya's World 2024</p>
             </div>
-            <div class="col-6">
-                <h3 class="text-white">Let's Connect</h3>
+            <div class="col-6 d-flex justify-content-end">
+                <a href="contact.html" class="text-decoration-none connect ">
+                    <h3 class=" h3 ms-auto">Let's <span class="char1">C</span>onnect
+                    </h3>
+                </a>
             </div>
         </div>
     </footer>
