@@ -73,6 +73,53 @@
 
 /* Styling Projects Page */
 
+.project-container {
+  position: relative;
+  height: 500px;
+}
+
+.project-container > div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.project-container > .project-img {
+  background-size: cover;
+  background-position: 20%;
+  height: 500px;
+  opacity: 50%;
+}
+
+.farm {
+  background-image: url(../images/farm.jpg);
+  background-size: cover;
+  background-position-x: 60%;
+  height: 500px;
+}
+
+.pop {
+  background-image: url(../images/pop.jpg);
+  background-size: contain;
+  height: 500px;
+}
+
+.dream {
+  background-image: url(../images/dream.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+
+.bunny {
+  background-image: url(../images/bunny.jpg);
+  background-size: cover;
+  background-position: top;
+  height: 500px;
+}
+
 /* Styling About */
 
 .about-me {
