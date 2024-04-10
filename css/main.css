@@ -33,7 +33,7 @@
 .h2 {
   font-family: "tangier", sans-serif;
   font-weight: 500;
-  font-style: n11ormal;
+  font-style: normal;
 }
 
 .h3 {
@@ -71,10 +71,12 @@
   color: var(--bs-primary);
 }
 
+/* Styling Projects Page */
+
 /* Styling About */
 
 .about-me {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 .card-text {
@@ -84,4 +86,9 @@
 
 .card-title {
   font-size: 1.8rem;
+}
+
+.cards a,
+.bio a {
+  font-size: 1.2rem;
 }
