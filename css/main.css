@@ -78,6 +78,10 @@
   height: 500px;
 }
 
+.project-container:not(:hover) {
+  filter: blur(5px); /* Adjust the blur radius as needed */
+}
+
 .project-container > div {
   position: absolute;
   top: 0;
@@ -118,6 +122,13 @@
   background-size: cover;
   background-position: top;
   height: 500px;
+}
+
+/* PROJECT PAGES */
+
+/* Pop Therapy Page */
+.pop-text {
+  color: #6f3b2d;
 }
 
 /* Styling About */
