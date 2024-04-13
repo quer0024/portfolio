@@ -2,7 +2,7 @@
 
 ## My Process:
 
-I began by creating the header and footer for every page to establish a base structure. Then, I added the main content using Bootstrap for layout and styling.
+I began by creating the header and footer for every page to establish a base structure. Then, I added the main content using Bootstrap for layout and styling. I added my variable and root colours on CSS and made some changes that I was unable to do with bootstrap.
 
 ## Changes:
 
