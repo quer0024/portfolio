@@ -1,7 +1,16 @@
-Portfolio
+# Portfolio
 
-Changes:
+## My Process:
 
-1. I have removed the Behance Icon. I originally wanted to include it and have a profile setup, however, I haven't had the time and that will be a summer project.
-2. On the contact page, I have left the mobile the align-left rather than be centered to maintain consistency in the design.
-3. I only have 4 projects as opposed to 6. The other 2 are incomplete and not ready to be published yet.
+I began by creating the header and footer for every page to establish a base structure. Then, I added the main content using Bootstrap for layout and styling.
+
+## Changes:
+
+- **Removed the Behance Icon:** Originally intended to include it with a profile setup, but postponed as a summer project.
+- **Contact Page Alignment:** Maintained left alignment for mobile view to preserve design consistency.
+- **Reduced Projects:** Included only 4 projects instead of 6, as the other 2 are incomplete and not ready for publication.
+- **Button Color Changes:** Updated button colors for a cleaner appearance.
+
+The main challenge was deciding when to use Bootstrap versus CSS. I leaned towards using CSS for many aspects instead of exploring Bootstrap further.
+
+**Animate.CSS**
