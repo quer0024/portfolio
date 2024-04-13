@@ -13,6 +13,51 @@
 
 /* Styling Navigation */
 
+.mw-logo {
+  width: 150px;
+}
+
+/* Styling Skip Links */
+.skip-links {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  color: white;
+  padding: 10px;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+}
+
+.skip-links:focus-within,
+.skip-links:hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+.skip-links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skip-links ul li {
+  display: inline;
+}
+
+.skip-links a {
+  display: inline-block;
+  padding: 5px 10px;
+  color: white;
+  background-color: var(--bs-primary);
+  text-decoration: none;
+}
+
+.skip-links a:focus,
+.skip-links a:hover {
+  background-color: var(--bs-tertiary);
+}
+
 /* Add animations to hover */
 
 .navbar-nav .nav-link {
@@ -42,10 +87,21 @@
   font-weight: 400;
 }
 
-.h3-mbl {
-  font-size: 2rem;
+.btn-projects {
+  border: 1px solid var(--bs-dark);
+  color: var(--bg-dark);
+}
+
+.btn-projects:focus,
+.btn-projects:hover {
+  background-color: var(--bs-tertiary);
   color: var(--bs-secondary);
-  font-weight: 400;
+  border: var(--bs-tertiary);
+}
+
+.view:focus,
+.view:hover {
+  color: var(--bs-tertiary);
 }
 
 /* Styling Footer */
