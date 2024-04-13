@@ -22,44 +22,53 @@
 
 <body class="container bg-dark">
     <header>
-        <!-- Maya's World Logo -->
-        <a href="index.html"><img src="images/" alt=""></a>
+        <!-- Skip links -->
+        <nav class="skip-links">
+            <ul>
+                <li><a href="#main-content">Skip to main content</a></li>
+                <li><a href="#footer">Skip to footer</a></li>
+            </ul>
+        </nav>
         <!-- Navigation for HOME, WORK, ABOUT, and CONTACT pages, does not go to specific project pages -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <!-- LOGO here -->
+                <a href="index.html">
+                    <img src="images/mw-logo-01.png" class="mw-logo img-fluid" alt="Maya's World Logo">
+                </a>
+                <!-- Navigation that becomes hamburger nav on ipad and mobile screens -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
+                        <li class="nav-item" role="menuitem">
                             <a class="nav-link" href="index.html">HOME</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" role="menuitem">
                             <a class="nav-link ms-3" href="work.html">WORK</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link  ms-3" href="about.html">ABOUT</a>
+                        <li class="nav-item" role="menuitem">
+                            <a class="nav-link ms-3" href="about.html">ABOUT</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link  active  ms-3" aria-current="page" href="contact.html">CONTACT</a>
+                        <li class="nav-item" role="menuitem">
+                            <a class="nav-link ms-3 active" aria-current="page" href="contact.html">CONTACT</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <main class="animate__animated animate__slideInUp">
+    <main class="animate__animated animate__slideInUp" id="main-content">
         <div class="d-flex justify-content-start contact">
             <div class="container">
                 <div class="row pb-5">
                     <div class="col-12">
                         <img class="img-fluid d-none d-sm-block" src="images/lwt.png" alt="Let's Work Together">
-                        <img class="img-fluid d-block d-sm-none" src="images/lwt-mobile.png" alt="">
+                        <img class="img-fluid d-block d-sm-none" src="images/lwt-mobile.png" alt="Let's Work Together">
                     </div>
                     <div class="col-md-6 text-white">
+                        <!-- Add Phone Call animation -->
                         <img src="" alt="">
                         <h1 class="fst-italic">My Info</h1>
                         <p class="lh-base">613.720.5579 <br>hello@mayasworld.ca <br> <a
@@ -73,41 +82,41 @@
                             mayaquerido </p>
                     </div>
                     <!-- Contact Form -->
-                    <form class="col-md-6 text-white">
+                    <form class="col-md-6 text-white" itemscope itemtype="http://schema.org/ContactPage">
                         <div class="mb-2">
                             <label for="fullName" class="form-label fst-italic fw-medium">Name</label>
-                            <input type="text" class="form-control bg-dark text-white" id="name">
+                            <input type="text" class="form-control bg-dark text-white" id="name" itemprop="name">
                         </div>
                         <div class="mb-2">
-                            <label for="email" class="form-label fst-italic fw-medium">Email
-                                address</label>
+                            <label for="email" class="form-label fst-italic fw-medium">Email address</label>
                             <input type="email" class="form-control bg-dark text-white" id="email"
-                                aria-describedby="emailHelp">
+                                aria-describedby="emailHelp" itemprop="email">
                         </div>
                         <div class="mb-2">
                             <label for="subject" class="form-label fst-italic fw-medium">Subject</label>
-                            <input type="text" class="form-control bg-dark text-white" id="subject">
+                            <input type="text" class="form-control bg-dark text-white" id="subject" itemprop="subject">
                         </div>
                         <div class="mb-3">
-                            <label for="message" class="form-label  fst-italic fw-medium">Message</label>
+                            <label for="message" class="form-label fst-italic fw-medium">Message</label>
                             <textarea name="message" class="form-control bg-dark text-white" id="message" cols="30"
-                                rows="3"></textarea>
+                                rows="3" itemprop="description"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-light">Submit</button>
+                        <button type="submit" class="btn btn-light btn-projects" itemprop="submit">Submit</button>
                     </form>
+
                 </div>
             </div>
         </div>
     </main>
 
-    <footer class="my-4 border-top">
+    <footer class="my-4 border-top" id="footer" role="contentinfo">
         <div class="row mt-5">
-            <div class="col-md-6 order-md-last text-center text-md-end mb-3 mb-md-0">
-                <a href="about.html" class="text-decoration-none connect">
+            <div class="col-md-6 order-md-last text-center text-md-end mb-3 mb-md-0 p-0">
+                <a href="about.html" class="text-decoration-none connect" role="link">
                     <h3 class="h3 mb-0">About <span class="char1">M</span>e</h3>
                 </a>
             </div>
-            <div class="col-md-6 text-center text-md-start">
+            <div class="col-md-6 text-center text-md-start p-0">
                 <a class="text-decoration-none socials" href="https://www.instagram.com/mayasworld.ca" target="_blank">
                     <i class="fa-brands fa-square-instagram display-5 me-2"></i>
                 </a>

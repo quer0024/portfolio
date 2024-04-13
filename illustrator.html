@@ -17,28 +17,36 @@
 
 <body class="container bg-dark">
     <header>
-        <!-- Maya's World Logo -->
-        <a href="index.html"><img src="images/" alt=""></a>
+        <!-- Skip links -->
+        <nav class="skip-links">
+            <ul>
+                <li><a href="#main-content">Skip to main content</a></li>
+                <li><a href="#footer">Skip to footer</a></li>
+            </ul>
+        </nav>
         <!-- Navigation for HOME, WORK, ABOUT, and CONTACT pages, does not go to specific project pages -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <!-- LOGO here -->
+                <a href="index.html">
+                    <img src="images/mw-logo-01.png" class="mw-logo img-fluid" alt="Maya's World Logo">
+                </a>
+                <!-- Navigation that becomes hamburger nav on ipad and mobile screens -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
+                        <li class="nav-item" role="menuitem">
                             <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" role="menuitem">
                             <a class="nav-link ms-3" href="work.html">WORK</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" role="menuitem">
                             <a class="nav-link ms-3" href="about.html">ABOUT</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" role="menuitem">
                             <a class="nav-link ms-3" href="contact.html">CONTACT</a>
                         </li>
                     </ul>
@@ -55,35 +63,35 @@
         </div>
         <div class="container text-center">
             <div class="row">
-                <div class="col">
+                <div class="col p-0">
                     <img class="img-fluid" src="images/bunny-sketch.png" alt="">
                 </div>
             </div>
             <h1 class="mt-5 fst-italic">The Result</h1>
             <div class="row">
-                <div class="col-2">
+                <div class="col-md-2 col-12 mt-2">
                     <img class="img-fluid" src="images/iphone-57px.jpg" alt="">
                 </div>
-                <div class="col-4">
-                    <img class="img-fluid" src="images/iPad-144px.jpg" alt="">
+                <div class="col-md-4 col-12 mt-2">
+                    <img class="img-fluid" src="images/ipad-144px.jpg" alt="">
                 </div>
-                <div class="col-6">
-                    <img class="img-fluid" src="images/iTunes-512px-01.jpg" alt="">
+                <div class="col-md-6 col-12 mt-2">
+                    <img class="img-fluid" src="images/itunes-512px-01.jpg" alt="">
                 </div>
             </div>
         </div>
         <div class="pop-btn mt-5 text-center">
-            <a class="btn btn-light" href="work.html">Back to Projects</a>
+            <a class="btn btn-light btn-projects" href="work.html">Back to Projects</a>
         </div>
     </main>
-    <footer class="my-4 border-top">
+    <footer class="my-4 border-top" id="footer" role="contentinfo">
         <div class="row mt-5">
-            <div class="col-md-6 order-md-last text-center text-md-end mb-3 mb-md-0">
-                <a href="contact.html" class="text-decoration-none connect">
+            <div class="col-md-6 order-md-last text-center text-md-end mb-3 mb-md-0 p-0">
+                <a href="contact.html" class="text-decoration-none connect" role="link">
                     <h3 class="h3 mb-0">Let's <span class="char1">C</span>onnect</h3>
                 </a>
             </div>
-            <div class="col-md-6 text-center text-md-start">
+            <div class="col-md-6 text-center text-md-start p-0">
                 <a class="text-decoration-none socials" href="https://www.instagram.com/mayasworld.ca" target="_blank">
                     <i class="fa-brands fa-square-instagram display-5 me-2"></i>
                 </a>

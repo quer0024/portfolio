@@ -21,28 +21,36 @@
 
 <body class="container bg-dark">
     <header>
-        <!-- Maya's World Logo -->
-        <a href="index.html"><img src="images/" alt=""></a>
+        <!-- Skip links -->
+        <nav class="skip-links">
+            <ul>
+                <li><a href="#main-content">Skip to main content</a></li>
+                <li><a href="#footer">Skip to footer</a></li>
+            </ul>
+        </nav>
         <!-- Navigation for HOME, WORK, ABOUT, and CONTACT pages, does not go to specific project pages -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <!-- LOGO here -->
+                <a href="index.html">
+                    <img src="images/mw-logo-01.png" class="mw-logo img-fluid" alt="Maya's World Logo">
+                </a>
+                <!-- Navigation that becomes hamburger nav on ipad and mobile screens -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
+                        <li class="nav-item" role="menuitem">
                             <a class="nav-link" href="index.html">HOME</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" role="menuitem">
                             <a class="nav-link ms-3" href="work.html">WORK</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link  active  ms-3" aria-current="page" href="about.html">ABOUT</a>
+                        <li class="nav-item" role="menuitem">
+                            <a class="nav-link ms-3 active" aria-current="page" href="about.html">ABOUT</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" role="menuitem">
                             <a class="nav-link ms-3" href="contact.html">CONTACT</a>
                         </li>
                     </ul>
@@ -50,12 +58,12 @@
             </div>
         </nav>
     </header>
-    <main class="animate__animated animate__slideInUp">
+    <main class="animate__animated animate__slideInUp" id="main-content">
 
         <!-- Bio and Headshot -->
         <div class="row mt-4 pb-2 border-bottom pb-5 bio">
             <div class="col-lg-6 text-center">
-                <img class="img-fluid" src="images/who-am-i.png" alt="">
+                <img class="img-fluid" src="images/who-am-i.png" alt="Who Am I?">
                 <p class="about-me text-white">My name is Maya Querido. Without knowing it, I’ve always had a passion
                     for graphic
                     and UX design. I
@@ -64,7 +72,8 @@
                     Interactive Media Design at Algonquin College. <br> <span class=" h2 fw-semibold">Welcome to Maya’s
                         World.
                     </span></p>
-                <a href="images/resume.pdf" target="_blank" class="btn btn-light resume mt-2">Resume PDF </a>
+                <a href="images/resume.pdf" target="_blank" class="btn btn-light resume mt-2 btn-projects">Resume PDF
+                </a>
             </div>
             <div class="col-lg-6 text-center">
                 <img class="img-fluid rounded-5" src="images/headshot.JPG" alt="Headshot of Maya Querido">
@@ -77,13 +86,13 @@
             <div class="container">
                 <div class="row text-center py-5 gx-4">
                     <div class="col-12">
-                        <img class="w-75" src="images/services.png" alt="">
+                        <img class="w-75" src="images/services.png" alt="My Services">
                     </div>
                     <!-- Brand Identity -->
                     <div class="col-lg-4 col-md-6 col-12">
                         <div class="card bg-transparent text-white border-0" style="width: 18rem;">
                             <img src="images/brand-identity.png" class="card-img-top mx-auto d-block w-75 rotate"
-                                alt="...">
+                                alt="">
                             <div class="card-body">
                                 <h5 class="card-title">Brand Identity</h5>
                                 <p class="card-text">Let’s peel back the layers of your brand and build it back stronger
@@ -94,8 +103,7 @@
                     <!-- Advertising -->
                     <div class="col-lg-4 col-md-6 col-12">
                         <div class="card bg-transparent text-white border-0" style="width: 18rem;">
-                            <img src="images/advertising.png" class="card-img-top mx-auto d-block w-75 rotate"
-                                alt="...">
+                            <img src="images/advertising.png" class="card-img-top mx-auto d-block w-75 rotate" alt="">
                             <div class="card-body">
                                 <h5 class="card-title">Advertising</h5>
                                 <p class="card-text">Stand out and shine with great advertising design.</p>
@@ -105,7 +113,7 @@
                     <!-- Web Design -->
                     <div class="col-lg-4 col-md-6 col-12">
                         <div class="card bg-transparent text-white border-0" style="width: 18rem;">
-                            <img src="images/web-design.png" class="card-img-top mx-auto d-block w-75 rotate" alt="...">
+                            <img src="images/web-design.png" class="card-img-top mx-auto d-block w-75 rotate" alt="">
                             <div class="card-body">
                                 <h5 class="card-title">Web Design</h5>
                                 <p class="card-text">Get the sweetest- but also functional and UX driven website design.
@@ -116,8 +124,7 @@
                     <!-- Illustration -->
                     <div class="col-lg-4 col-md-6 col-12 mt-4">
                         <div class="card bg-transparent text-white border-0" style="width: 18rem;">
-                            <img src="images/illustration.png" class="card-img-top mx-auto d-block w-75 rotate"
-                                alt="...">
+                            <img src="images/illustration.png" class="card-img-top mx-auto d-block w-75 rotate" alt="">
                             <div class="card-body">
                                 <h5 class="card-title">Illustration</h5>
                                 <p class="card-text">Let’s turn the tables and add a fun spin to your designs with
@@ -128,7 +135,7 @@
                     <!-- Packaging -->
                     <div class="col-lg-4 col-md-6 col-12 mt-4">
                         <div class="card bg-transparent text-white border-0" style="width: 18rem;">
-                            <img src="images/packaging.png" class="card-img-top mx-auto d-block w-75 rotate" alt="...">
+                            <img src="images/packaging.png" class="card-img-top mx-auto d-block w-75 rotate" alt="">
                             <div class="card-body">
                                 <h5 class="card-title">Packaging</h5>
                                 <p class="card-text">Let’s pop open the world of creating amazing packaging design.</p>
@@ -138,7 +145,7 @@
                     <!-- App Design -->
                     <div class="col-lg-4 col-md-6 col-12 mt-4">
                         <div class="card bg-transparent text-white border-0" style="width: 18rem;">
-                            <img src="images/app-design.png" class="card-img-top mx-auto d-block w-75 rotate" alt="...">
+                            <img src="images/app-design.png" class="card-img-top mx-auto d-block w-75 rotate" alt="">
                             <div class="card-body">
                                 <h5 class="card-title">App Design</h5>
                                 <p class="card-text">Catch everyone’s eye with the best app design.
@@ -152,7 +159,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 text-center">
-                    <img src="images/softwares.png" alt="" class="img-fluid w-75">
+                    <img src="images/softwares.png" alt="My Softwares" class="img-fluid w-75">
                 </div>
             </div>
             <div class="row justify-content-center">
@@ -188,14 +195,14 @@
             <p class="text-white fst-italic">Back to Top</p>
         </div>
     </main>
-    <footer class="my-4 border-top">
+    <footer class="my-4 border-top" id="footer" role="contentinfo">
         <div class="row mt-5">
-            <div class="col-md-6 order-md-last text-center text-md-end mb-3 mb-md-0">
-                <a href="contact.html" class="text-decoration-none connect">
+            <div class="col-md-6 order-md-last text-center text-md-end mb-3 mb-md-0 p-0">
+                <a href="contact.html" class="text-decoration-none connect" role="link">
                     <h3 class="h3 mb-0">Let's <span class="char1">C</span>onnect</h3>
                 </a>
             </div>
-            <div class="col-md-6 text-center text-md-start">
+            <div class="col-md-6 text-center text-md-start p-0">
                 <a class="text-decoration-none socials" href="https://www.instagram.com/mayasworld.ca" target="_blank">
                     <i class="fa-brands fa-square-instagram display-5 me-2"></i>
                 </a>
