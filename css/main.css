@@ -42,6 +42,12 @@
   font-weight: 400;
 }
 
+.h3-mbl {
+  font-size: 2rem;
+  color: var(--bs-secondary);
+  font-weight: 400;
+}
+
 /* Styling Footer */
 
 .char1 {
@@ -131,7 +137,7 @@
   color: #6f3b2d;
 }
 
-/* Styling About */
+/* ABOUT PAGE */
 
 .about-me {
   font-size: 1.4rem;
@@ -149,4 +155,19 @@
 .cards a,
 .bio a {
   font-size: 1.2rem;
+}
+
+@keyframes rotateImage {
+  0% {
+    transform: rotate(0deg);
+    transform: rotate(360deg);
+  }
+}
+
+.rotate {
+  transition: transform 5s;
+}
+
+.rotate:hover {
+  animation: rotateImage 5s infinite linear;
 }
