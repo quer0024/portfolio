@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="https://use.typekit.net/zvb3gah.css">
     <!-- Font Awesome Icons link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Animation CSS Library link -->
+    <link rel="stylesheet" href="css/animate.css">
+
 </head>
 
 <!-- REMINDER : COPY AND PASTE TO OTHER HTML WHEN HEADER AND FOOTER ARE DONE -->
@@ -48,14 +51,15 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main class="animate__animated animate__slideInUp">
         <div class="d-flex justify-content-start contact">
             <div class="container">
                 <div class="row pb-5">
                     <div class="col-12">
-                        <img class="img-fluid" src="images/lwt.png" alt="Let's Work Together">
+                        <img class="img-fluid d-none d-sm-block" src="images/lwt.png" alt="Let's Work Together">
+                        <img class="img-fluid d-block d-sm-none" src="images/lwt-mobile.png" alt="">
                     </div>
-                    <div class="col-6 text-white">
+                    <div class="col-md-6 text-white">
                         <img src="" alt="">
                         <h1 class="fst-italic">My Info</h1>
                         <p class="lh-base">613.720.5579 <br>hello@mayasworld.ca <br> <a
@@ -69,7 +73,7 @@
                             mayaquerido </p>
                     </div>
                     <!-- Contact Form -->
-                    <form class="col-6 text-white">
+                    <form class="col-md-6 text-white">
                         <div class="mb-2">
                             <label for="fullName" class="form-label fst-italic fw-medium">Name</label>
                             <input type="text" class="form-control bg-dark text-white" id="name">
@@ -95,26 +99,30 @@
             </div>
         </div>
     </main>
+
     <footer class="my-4 border-top">
         <div class="row mt-5">
-            <div class="col-6">
-                <a class="text-decoration-none socials" href="https://www.instagram.com/mayasworld.ca" target="_blank">
-                    <i class="fa-brands fa-square-instagram  display-5 me-2 "></i>
+            <div class="col-md-6 order-md-last text-center text-md-end mb-3 mb-md-0">
+                <a href="about.html" class="text-decoration-none connect">
+                    <h3 class="h3 mb-0">About <span class="char1">M</span>e</h3>
                 </a>
-                <a class="text-decoration-none  socials" href="https://www.linkedin.com/in/maya-querido-194001239/"
+            </div>
+            <div class="col-md-6 text-center text-md-start">
+                <a class="text-decoration-none socials" href="https://www.instagram.com/mayasworld.ca" target="_blank">
+                    <i class="fa-brands fa-square-instagram display-5 me-2"></i>
+                </a>
+                <a class="text-decoration-none socials" href="https://www.linkedin.com/in/maya-querido-194001239/"
                     target="_blank">
-                    <i class="fa-brands fa-linkedin display-5 me-2 "></i>
+                    <i class="fa-brands fa-linkedin display-5 me-2"></i>
                 </a>
                 <p class="text-white copy">&copy Maya's World 2024</p>
             </div>
-            <div class="col-6 d-flex justify-content-end">
-                <a href="contact.html" class="text-decoration-none connect ">
-                    <h3 class=" h3 ms-auto">Let's <span class="char1">C</span>onnect
-                    </h3>
-                </a>
-            </div>
         </div>
     </footer>
+
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>

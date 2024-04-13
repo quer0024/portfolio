@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://use.typekit.net/zvb3gah.css">
     <!-- Font Awesome Icons link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Animation CSS Library link -->
+    <link rel="stylesheet" href="css/animate.css">
 </head>
 
 <!-- REMINDER : COPY AND PASTE TO OTHER HTML WHEN HEADER AND FOOTER ARE DONE -->
@@ -48,11 +50,11 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main class="animate__animated animate__slideInUp">
 
         <!-- Bio and Headshot -->
         <div class="row mt-4 pb-2 border-bottom pb-5 bio">
-            <div class="col-6 text-center">
+            <div class="col-lg-6 text-center">
                 <img class="img-fluid" src="images/who-am-i.png" alt="">
                 <p class="about-me text-white">My name is Maya Querido. Without knowing it, I’ve always had a passion
                     for graphic
@@ -64,7 +66,7 @@
                     </span></p>
                 <a href="images/resume.pdf" target="_blank" class="btn btn-light resume mt-2">Resume PDF </a>
             </div>
-            <div class="col-6">
+            <div class="col-lg-6 text-center">
                 <img class="img-fluid rounded-5" src="images/headshot.JPG" alt="Headshot of Maya Querido">
             </div>
         </div>
@@ -80,7 +82,8 @@
                     <!-- Brand Identity -->
                     <div class="col-lg-4 col-md-6 col-12">
                         <div class="card bg-transparent text-white border-0" style="width: 18rem;">
-                            <img src="images/brand-identity.png" class="card-img-top mx-auto d-block w-75" alt="...">
+                            <img src="images/brand-identity.png" class="card-img-top mx-auto d-block w-75 rotate"
+                                alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Brand Identity</h5>
                                 <p class="card-text">Let’s peel back the layers of your brand and build it back stronger
@@ -91,7 +94,8 @@
                     <!-- Advertising -->
                     <div class="col-lg-4 col-md-6 col-12">
                         <div class="card bg-transparent text-white border-0" style="width: 18rem;">
-                            <img src="images/advertising.png" class="card-img-top mx-auto d-block w-75" alt="...">
+                            <img src="images/advertising.png" class="card-img-top mx-auto d-block w-75 rotate"
+                                alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Advertising</h5>
                                 <p class="card-text">Stand out and shine with great advertising design.</p>
@@ -101,7 +105,7 @@
                     <!-- Web Design -->
                     <div class="col-lg-4 col-md-6 col-12">
                         <div class="card bg-transparent text-white border-0" style="width: 18rem;">
-                            <img src="images/web-design.png" class="card-img-top mx-auto d-block w-75" alt="...">
+                            <img src="images/web-design.png" class="card-img-top mx-auto d-block w-75 rotate" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Web Design</h5>
                                 <p class="card-text">Get the sweetest- but also functional and UX driven website design.
@@ -112,7 +116,8 @@
                     <!-- Illustration -->
                     <div class="col-lg-4 col-md-6 col-12 mt-4">
                         <div class="card bg-transparent text-white border-0" style="width: 18rem;">
-                            <img src="images/illustration.png" class="card-img-top mx-auto d-block w-75" alt="...">
+                            <img src="images/illustration.png" class="card-img-top mx-auto d-block w-75 rotate"
+                                alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Illustration</h5>
                                 <p class="card-text">Let’s turn the tables and add a fun spin to your designs with
@@ -123,7 +128,7 @@
                     <!-- Packaging -->
                     <div class="col-lg-4 col-md-6 col-12 mt-4">
                         <div class="card bg-transparent text-white border-0" style="width: 18rem;">
-                            <img src="images/packaging.png" class="card-img-top mx-auto d-block w-75" alt="...">
+                            <img src="images/packaging.png" class="card-img-top mx-auto d-block w-75 rotate" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Packaging</h5>
                                 <p class="card-text">Let’s pop open the world of creating amazing packaging design.</p>
@@ -133,7 +138,7 @@
                     <!-- App Design -->
                     <div class="col-lg-4 col-md-6 col-12 mt-4">
                         <div class="card bg-transparent text-white border-0" style="width: 18rem;">
-                            <img src="images/app-design.png" class="card-img-top mx-auto d-block w-75" alt="...">
+                            <img src="images/app-design.png" class="card-img-top mx-auto d-block w-75 rotate" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">App Design</h5>
                                 <p class="card-text">Catch everyone’s eye with the best app design.
@@ -151,40 +156,54 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col text-center">
+                <div class="col-md-4 col-sm-12 text-center mb-3">
                     <img src="images/photoshop.png" alt="Photoshop Logo">
                 </div>
-                <div class="col text-center">
+                <div class="col-md-4 col-sm-12 text-center mb-3">
                     <img src="images/illustrator.png" alt="Illustrator Logo">
                 </div>
-                <div class="col text-center">
+                <div class="col-md-4 col-sm-12 text-center mb-3">
                     <img src="images/indesign.png" alt="InDesign Logo">
                 </div>
             </div>
+            <div class="row mt-5 justify-content-center">
+                <div class="col-md-4 col-sm-12 text-center mb-3">
+                    <img src="images/canva.png" alt="Canva Logo">
+                </div>
+                <div class="col-md-4 col-sm-12 text-center mb-3">
+                    <img src="images/figma.png" alt="Figma Logo">
+                </div>
+                <div class="col-md-4 col-sm-12 text-center mb-3">
+                    <img src="images/procreate.png" alt="Procreate Logo">
+                </div>
+            </div>
         </div>
-
         <div class="d-flex justify-content-center mt-5">
             <a href="contact.html" class="btn btn-light">Let's Work Together</a>
         </div>
-
+        <div class="mt-4 text-center">
+            <a href="#">
+                <img src="images/btt-arrow.png" alt="Back To Top Arrow">
+            </a>
+            <p class="text-white fst-italic">Back to Top</p>
+        </div>
     </main>
     <footer class="my-4 border-top">
         <div class="row mt-5">
-            <div class="col-6">
-                <a class="text-decoration-none socials" href="https://www.instagram.com/mayasworld.ca" target="_blank">
-                    <i class="fa-brands fa-square-instagram  display-5 me-2 "></i>
+            <div class="col-md-6 order-md-last text-center text-md-end mb-3 mb-md-0">
+                <a href="contact.html" class="text-decoration-none connect">
+                    <h3 class="h3 mb-0">Let's <span class="char1">C</span>onnect</h3>
                 </a>
-                <a class="text-decoration-none  socials" href="https://www.linkedin.com/in/maya-querido-194001239/"
+            </div>
+            <div class="col-md-6 text-center text-md-start">
+                <a class="text-decoration-none socials" href="https://www.instagram.com/mayasworld.ca" target="_blank">
+                    <i class="fa-brands fa-square-instagram display-5 me-2"></i>
+                </a>
+                <a class="text-decoration-none socials" href="https://www.linkedin.com/in/maya-querido-194001239/"
                     target="_blank">
-                    <i class="fa-brands fa-linkedin display-5 me-2 "></i>
+                    <i class="fa-brands fa-linkedin display-5 me-2"></i>
                 </a>
                 <p class="text-white copy">&copy Maya's World 2024</p>
-            </div>
-            <div class="col-6 d-flex justify-content-end">
-                <a href="contact.html" class="text-decoration-none connect ">
-                    <h3 class=" h3 ms-auto">Let's <span class="char1">C</span>onnect
-                    </h3>
-                </a>
             </div>
         </div>
     </footer>

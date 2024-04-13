@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://use.typekit.net/zvb3gah.css">
     <!-- Font Awesome Icons link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Animation CSS Library link -->
+    <link rel="stylesheet" href="css/animate.css">
 </head>
 
 <!-- REMINDER : COPY AND PASTE TO OTHER HTML WHEN HEADER AND FOOTER ARE DONE -->
@@ -48,10 +50,12 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main class="animate__animated animate__slideInUp">
+        <!-- My work header image/text -->
         <div class="d-flex justify-content-center">
             <img src="images/mywork.png" alt="" class="img-fluid w-50">
         </div>
+        <!-- Short blurb about my work -->
         <div class="d-flex text-center">
             <p class="about-me text-white">Explore my various works from real clients to mock projects to school
                 assignments. I have
@@ -59,8 +63,10 @@
                 in captivating graphic designs while also creating efficient and effective UX designs with my own
                 illustrative spin.</p>
         </div>
+        <!-- Area for clickable project covers -->
         <div class="text-center">
-            <div class="row row-cols-2 text-white">
+            <div class="row row-cols-1 row-cols-sm-2 text-white">
+                <!-- Project 1: The Farm -->
                 <a href="farm.html" class="project-container text-decoration-none text-white">
                     <div class="farm project-img col"></div>
                     <div class="farm-content">
@@ -69,6 +75,7 @@
                         <p>Photography</p>
                     </div>
                 </a>
+                <!-- Project 2: Pop Therapy -->
                 <a href="pop.html" class="project-container text-decoration-none text-white">
                     <div class="pop project-img col"></div>
                     <div class="pop-content">
@@ -77,6 +84,7 @@
                         <p>Brand Identity <br> Advertising</p>
                     </div>
                 </a>
+                <!-- Project 3: The Dream -->
                 <a href="dream.html" class="project-container text-decoration-none text-white pt-4">
                     <div class="dream project-img col"> </div>
                     <div class="dream-content">
@@ -85,34 +93,41 @@
                         <p>Brand Identity <br> Advertising</p>
                     </div>
                 </a>
+                <!-- Project 4: The Bunny -->
                 <a href="illustrator.html" class="project-container text-decoration-none text-white pt-4">
                     <div class="bunny project-img col"></div>
                     <div class="bunny-content">
-                        <p class="work-hdr m-0 pt-4">Client</p>
+                        <p class="work-hdr m-0 pt-4">School Project</p>
                         <h1 class="m-0 fst-italic">The Bunny</h1>
                         <p>Illustration</p>
                     </div>
                 </a>
             </div>
         </div>
+        <!-- Back to Top Arrow  -->
+        <div class="mt-4 text-center">
+            <a href="#">
+                <img src="images/btt-arrow.png" alt="Back To Top Arrow">
+            </a>
+            <p class="text-white fst-italic">Back to Top</p>
+        </div>
     </main>
     <footer class="my-4 border-top">
         <div class="row mt-5">
-            <div class="col-6">
-                <a class="text-decoration-none socials" href="https://www.instagram.com/mayasworld.ca" target="_blank">
-                    <i class="fa-brands fa-square-instagram  display-5 me-2 "></i>
+            <div class="col-md-6 order-md-last text-center text-md-end mb-3 mb-md-0">
+                <a href="contact.html" class="text-decoration-none connect">
+                    <h3 class="h3 mb-0">Let's <span class="char1">C</span>onnect</h3>
                 </a>
-                <a class="text-decoration-none  socials" href="https://www.linkedin.com/in/maya-querido-194001239/"
+            </div>
+            <div class="col-md-6 text-center text-md-start">
+                <a class="text-decoration-none socials" href="https://www.instagram.com/mayasworld.ca" target="_blank">
+                    <i class="fa-brands fa-square-instagram display-5 me-2"></i>
+                </a>
+                <a class="text-decoration-none socials" href="https://www.linkedin.com/in/maya-querido-194001239/"
                     target="_blank">
-                    <i class="fa-brands fa-linkedin display-5 me-2 "></i>
+                    <i class="fa-brands fa-linkedin display-5 me-2"></i>
                 </a>
                 <p class="text-white copy">&copy Maya's World 2024</p>
-            </div>
-            <div class="col-6 d-flex justify-content-end">
-                <a href="contact.html" class="text-decoration-none connect ">
-                    <h3 class=" h3 ms-auto">Let's <span class="char1">C</span>onnect
-                    </h3>
-                </a>
             </div>
         </div>
     </footer>

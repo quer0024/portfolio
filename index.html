@@ -13,18 +13,18 @@
     <link rel="stylesheet" href="https://use.typekit.net/zvb3gah.css">
     <!-- Font Awesome Icons link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Animation CSS Library link -->
+    <link rel="stylesheet" href="css/animate.css">
 </head>
-
-<!-- REMINDER : COPY AND PASTE TO OTHER HTML WHEN HEADER AND FOOTER ARE DONE -->
 
 <body class="container bg-dark">
     <header>
-        <!-- Maya's World Logo -->
         <a href="index.html"><img src="images/" alt=""></a>
         <!-- Navigation for HOME, WORK, ABOUT, and CONTACT pages, does not go to specific project pages -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
                 <!-- LOGO here -->
+                <!-- Navigation that becomes hamburger nav on ipad and mobile screens -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -48,43 +48,55 @@
             </div>
         </nav>
     </header>
-    <main class="mt-4 pb-2">
-        <!-- Centering image with div rows and centering content, making smaller with the "w" tag -->
+    <main class="mt-4 pb-2 animate__animated animate__slideInUp">
+        <!-- Header images -->
         <div class="row justify-content-center">
             <div class=" text-center pb-5">
                 <img class="img-fluid w-75" src="images/welcome.png" alt="Welcome to my world">
                 <p class="text-white h4">UX . Graphic . Illustration</p>
             </div>
         </div>
-        <h1 class="text-white fst-italic">Feature Project</h1>
-        <a href="pop.html"><img class="img-fluid" src="images/feature-desktop.jpg"
-                alt="Pop Therapy brand design work"></a>
-        <h2 class="m-2"><a class="text-white text-decoration-none h2" href="work.html">View all my
-                work<i class="fa-solid fa-arrow-right-long text-white ms-3"></i></a>
-        </h2>
-        <!-- Add icon arrow point to right that is a button -->
+        <!-- Feature project that links to project page -->
+        <h1 class="text-white fst-italic animate__animated animate__bounce">Feature Project</h1>
+        <a href="pop.html">
+            <img class="img-fluid d-none d-md-block" src="images/feature-desktop.jpg"
+                alt="Pop Therapy brand design work">
+            <img class="img-fluid d-md-none" src="images/feature-ipad.jpg" alt="">
+        </a>
+        <!-- Link to all of my work -->
+        <div class="row justify-content-end">
+            <div class="col-md-6 text-end">
+                <h2 class="m-2"><a class="text-white text-decoration-none h2" href="work.html">View all my
+                        work<i class="fa-solid fa-arrow-right-long text-white ms-3"></i></a>
+                </h2>
+            </div>
+        </div>
+        <!-- Back to top arrow (hand drawn) -->
+        <div class="text-center">
+            <a href="#">
+                <img src="images/btt-arrow.png" alt="Back To Top Arrow">
+            </a>
+            <p class="text-white fst-italic">Back to Top</p>
+        </div>
 
-        <!-- Sketched arrow pointing up that is a back to top button -->
-
-        <!-- add border bottom to main  -->
     </main>
     <footer class="my-4 border-top">
+        <!-- Let's connect button links to contact page, is on top for mobile -->
         <div class="row mt-5">
-            <div class="col-6">
-                <a class="text-decoration-none socials" href="https://www.instagram.com/mayasworld.ca" target="_blank">
-                    <i class="fa-brands fa-square-instagram  display-5 me-2 "></i>
+            <div class="col-md-6 order-md-last text-center text-md-end mb-3 mb-md-0">
+                <a href="contact.html" class="text-decoration-none connect">
+                    <h3 class="h3 mb-0">Let's <span class="char1">C</span>onnect</h3>
                 </a>
-                <a class="text-decoration-none  socials" href="https://www.linkedin.com/in/maya-querido-194001239/"
+            </div>
+            <div class="col-md-6 text-center text-md-start">
+                <a class="text-decoration-none socials" href="https://www.instagram.com/mayasworld.ca" target="_blank">
+                    <i class="fa-brands fa-square-instagram display-5 me-2"></i>
+                </a>
+                <a class="text-decoration-none socials" href="https://www.linkedin.com/in/maya-querido-194001239/"
                     target="_blank">
-                    <i class="fa-brands fa-linkedin display-5 me-2 "></i>
+                    <i class="fa-brands fa-linkedin display-5 me-2"></i>
                 </a>
                 <p class="text-white copy">&copy Maya's World 2024</p>
-            </div>
-            <div class="col-6 d-flex justify-content-end">
-                <a href="contact.html" class="text-decoration-none connect ">
-                    <h3 class=" h3 ms-auto">Let's <span class="char1">C</span>onnect
-                    </h3>
-                </a>
             </div>
         </div>
     </footer>
